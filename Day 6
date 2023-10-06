@@ -1,0 +1,31 @@
+#Python :
+
+T=int(input())
+for i in range(T):
+    NN,MM,KK=map(int,input().split())
+    if (MM*KK>=NN):
+	    print("Yes")
+    else:
+	    print("No")
+
+#Java :
+
+import java.util.Scanner;
+class bread
+{
+public static void main(String []args)
+{
+ Scanner sc = new Scanner(System.in);
+ int T = sc.nextInt();
+ for(int i = 0;i<T;i++)
+ {
+  int NN=sc.nextInt();
+  int MM=sc.nextInt();
+  int KK=sc.nextInt();
+  if (MM*KK>=NN)
+   System.out.println("Yes");
+  else
+    System.out.println("No");
+ }
+}
+}
