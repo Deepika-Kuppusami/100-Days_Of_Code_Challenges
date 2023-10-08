@@ -1,0 +1,24 @@
+#Python :
+
+T=int(input())
+for i in range(T):
+	C,X,Y=map(int,input().split())
+	print((C-X)*Y)
+
+#Java :
+
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+  Scanner sc=new Scanner(System.in);
+  int T = sc.nextInt();
+  for(int i = 0;i<T;i++)
+  {int C = sc.nextInt();
+   int X = sc.nextInt();
+   int Y = sc.nextInt();
+   System.out.println((C-X)*Y);
+  }
+}
+}
