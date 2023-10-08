@@ -1,0 +1,18 @@
+#Python :
+
+X,Y=map(int,input().split())
+print(X*Y)
+
+#Java :
+
+import java.util.Scanner;
+public class Main 
+{
+  public static void main(String[] args)
+  {
+  Scanner sc=new Scanner(System.in);
+  X=sc.nextInt();
+  Y=sc.nextInt();
+  System.out.println(X*Y);
+  }
+}
