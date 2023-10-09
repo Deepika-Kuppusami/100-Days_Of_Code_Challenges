@@ -1,0 +1,24 @@
+#Python :
+
+T=int(input())
+for i in range(T):
+    N=int(input())
+    print(N*10)
+
+#Java :
+
+import java.util.*;
+import java.lang.*;
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner sc=new Scanner(System.in);
+	    int T = sc.nextInt();
+	    for (int i=0;i<T;i++)
+	    {
+	        int N=sc.nextInt();
+	        System.out.println(N*10);
+	    }
+	}
+}
