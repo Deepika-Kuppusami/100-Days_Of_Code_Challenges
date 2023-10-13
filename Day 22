@@ -1,0 +1,10 @@
+#Python :
+
+T=int(input())
+for i in range(T):
+    N=int(input())
+    coefficient=list(map(int,input().split()))
+    for i in range(N):
+        if(coefficient[i]!=0):
+            degree=i
+    print(degree)
