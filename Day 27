@@ -1,0 +1,78 @@
+    *
+   ***  
+  *****
+ *******
+*********
+class Solution:
+
+    def printTriangle(self, N):
+
+        x=1
+
+        for i in range(N,0,-1):
+
+            for j in range(1,i):
+
+                print(end=" ")
+
+                
+
+            for k in range(i,N):
+
+                print("*",end="")
+
+            
+
+            for l in range(x):
+
+                print("*",end="")
+
+            x=x+1
+
+            print()
+if __name__ == '__main__':
+
+    t = int(input())
+
+    for _ in range(t):
+
+        N = int(input())
+
+        ob = Solution()
+
+        ob.printTriangle(N)
+*********
+ *******
+  *****
+   ***
+    *
+class Solution:
+
+    def printTriangle(self, N):
+
+        x=1
+
+        for i in range(N,0,-1):
+
+            for j in range(1,x):
+
+                print(end=" ")
+
+            x=x+1
+
+            for k in range(1,2*i):
+
+                print(end="*")
+
+            print()
+if __name__ == '__main__':
+
+    t = int(input())
+
+    for _ in range(t):
+
+        N = int(input())
+
+        ob = Solution()
+
+        ob.printTriangle(N)
