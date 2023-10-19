@@ -1,0 +1,49 @@
+4 4 4 4 4 4 4
+4 3 3 3 3 3 4
+4 3 2 2 2 3 4
+4 3 2 1 2 3 4
+4 3 2 2 2 3 4
+4 3 3 3 3 3 4
+4 4 4 4 4 4 4
+
+class Solution:
+
+    def printTriangle(self, N):
+
+        size=N*2-1
+
+        grid = [[0] * size for _ in range(size)]
+
+        for i in range(N):
+
+            for j in range(i, size - i):
+
+                grid[j][size - 1 - i] = N- i
+
+                grid[i][j] = N - i
+
+                grid[j][i] = N - i
+
+                grid[size - 1 - i][j] = N - i
+
+        
+
+        for row in grid:
+
+            for num in row:
+
+                print(num, end=' ')
+
+            print()
+
+if __name__ == '__main__':
+
+    t = int(input())
+
+    for _ in range(t):
+
+        N = int(input().strip())
+
+        ob = Solution()
+
+        ob.printTriangle(N)
