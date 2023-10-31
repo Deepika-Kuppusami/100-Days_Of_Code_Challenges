@@ -1,0 +1,30 @@
+
+def largest( arr, n):
+
+    large=arr[0]
+
+    for i in range(len(arr)):
+
+        if large<arr[i]:
+
+            large=arr[i]
+
+    return large
+
+def main():
+
+    T = int(input())
+
+    while(T > 0):
+
+        n = int(input())
+
+        a = [int(x) for x in input().strip().split()]
+
+        print(largest(a, n))
+
+        T -= 1
+
+if __name__ == "__main__":
+
+    main()
