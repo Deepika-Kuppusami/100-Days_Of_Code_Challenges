@@ -1,0 +1,43 @@
+class Solution:
+
+    def leftRotate(self, arr, n, d):   
+
+            s=d%n
+
+            temp=[0]*s
+
+            for i in range(0,s):
+
+                temp[i]=arr[i]
+
+            for k in range(s,n):
+
+                arr[k-s]=arr[k]
+
+            for j in range(n-s,n):
+
+                arr[j]=temp[j-(n-s)]
+
+if __name__ == '__main__':
+
+    tc = int(input())
+
+    while tc > 0:
+
+        n = int(input())
+
+        arr = list(map(int, input().strip().split()))
+
+        d = int(input())
+
+        ob = Solution()
+
+        ob.leftRotate(arr, n, d)
+
+        for xx in arr:
+
+            print(xx, end=" ")
+
+        print()
+
+        tc -= 1
