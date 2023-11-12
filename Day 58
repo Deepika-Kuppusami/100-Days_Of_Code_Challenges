@@ -1,0 +1,29 @@
+class Solution:
+
+    def lenOfLongSubarr (self, arr, n, k) : 
+
+        length=0
+
+        for i in range(n):
+
+            x=0
+
+            for j in range(i,n):
+
+                x+=arr[j]
+
+                if x==k:
+
+                    length=max(length,j-i+1)
+
+        return length
+
+for _ in range(0,int(input())):
+
+    n, k = map(int , input().split())
+
+    arr = list(map(int,input().strip().split()))
+
+    ob = Solution()
+
+    print(ob.lenOfLongSubarr(arr, n,k))
