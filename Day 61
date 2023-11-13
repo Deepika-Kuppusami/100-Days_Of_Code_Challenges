@@ -1,0 +1,8 @@
+class Solution(object):
+    def majorityElement(self, nums):
+        n=len(nums)
+        c=set(nums)
+        for i in c:
+            if nums.count(i)>n//2:
+                return i
+        return -1
