@@ -1,0 +1,17 @@
+class Solution(object):
+    def maxSubArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        maxi= float('-inf')
+
+        summ = 0
+
+        for num in nums:
+ 
+            summ = max(num, summ + num)
+
+            maxi = max(maxi, summ)
+ 
+        return maxi
