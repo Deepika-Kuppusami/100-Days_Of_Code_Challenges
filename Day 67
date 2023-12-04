@@ -6,6 +6,8 @@ class Solution(object):
         """
         m=0
         n=len(nums)
+        if not nums:
+            return 0
         nums.sort()
         a=nums[0]
         d=1
@@ -19,4 +21,5 @@ class Solution(object):
                 a=nums[i]
                 d=1
             m=max(m,d)
+        m=max(m,d)
         return m
