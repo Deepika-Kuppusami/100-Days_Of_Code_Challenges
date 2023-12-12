@@ -1,0 +1,46 @@
+
+class Solution:
+
+    def maxLen(self, n, arr):
+
+        #Code here
+
+        mpp = {}
+
+        maxi = 0
+
+        sums = 0
+
+        for i in range(n):
+
+            sums += arr[i]
+
+            if sums == 0:
+
+                maxi = i + 1
+
+            else:
+
+                if sums in mpp:
+
+                    maxi = max(maxi, i - mpp[sums])
+
+                else:
+
+                    mpp[sums] = i
+
+        return maxi
+
+if __name__=='__main__':
+
+    t= int(input())
+
+    for i in range(t):
+
+        n = int(input())
+
+        arr = list(map(int, input().strip().split()))
+
+        ob = Solution()
+
+        print(ob.maxLen(n ,arr))
